@@ -123,26 +123,10 @@
         </div>
 
         <div class="hero-visual">
-          <!-- FOTO PRINCIPAL: img/hero.png (se não existir, aparece o mascote) -->
-          <div class="blob">
-            <svg class="mascote" viewBox="0 0 200 200" aria-hidden="true">
-              <ellipse class="orelha orelha-e" cx="46" cy="88" rx="22" ry="42" fill="#b8702d" transform="rotate(18 46 88)"/>
-              <ellipse class="orelha orelha-d" cx="154" cy="88" rx="22" ry="42" fill="#b8702d" transform="rotate(-18 154 88)"/>
-              <circle cx="100" cy="100" r="60" fill="#eaa85e"/>
-              <ellipse cx="124" cy="86" rx="20" ry="22" fill="#c98640"/>
-              <ellipse cx="100" cy="126" rx="33" ry="25" fill="#fff4e0"/>
-              <path class="lingua" d="M91 134q9 24 18 0z" fill="#ff7a8a"/>
-              <path d="M100 121v11M100 132c-6 8-17 6-19 0M100 132c6 8 17 6 19 0" fill="none" stroke="#3b2a1d" stroke-width="3" stroke-linecap="round"/>
-              <ellipse cx="100" cy="113" rx="12" ry="8.5" fill="#2c211a"/>
-              <ellipse cx="96" cy="110.500" rx="3.500" ry="2" fill="#fff" opacity=".55"/>
-              <g class="olhos">
-                <circle cx="77" cy="92" r="7.500" fill="#2c211a"/><circle cx="123" cy="92" r="7.500" fill="#2c211a"/>
-                <circle cx="74.500" cy="89.500" r="2.500" fill="#fff"/><circle cx="120.500" cy="89.500" r="2.500" fill="#fff"/>
-              </g>
-              <circle cx="62" cy="112" r="8" fill="#ff8f8f" opacity=".35"/><circle cx="138" cy="112" r="8" fill="#ff8f8f" opacity=".35"/>
-            </svg>
-            <img class="blob-foto" src="img/hero.png" alt="" onerror="this.remove()">
-          </div>
+          <!-- FOTO PRINCIPAL: img/hero.png (opcional). Se o arquivo não existir, esta coluna some
+               e o texto do topo fica centralizado sozinho. -->
+          <img class="hero-foto" src="img/hero.png" alt="Pet atendido no Pet Shop Vira-Lata"
+               onerror="this.closest('.hero-grade').classList.add('sem-foto'); this.closest('.hero-visual').remove();">
         </div>
       </div>
     </section>
