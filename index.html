@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop Vira-Lata | Banho, tosa e muito carinho</title>
+  <meta name="description" content="Pet Shop Vira-Lata: banho, tosa, ração, acessórios e muito carinho pro seu pet.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ÍCONES (use com <svg class="icone"><use href="#i-nome"/></svg>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-pata" viewBox="0 0 24 24">
+      <circle pathLength="1" cx="11" cy="4" r="2"/><circle pathLength="1" cx="18" cy="8" r="2"/><circle pathLength="1" cx="20" cy="16" r="2"/>
+      <path pathLength="1" d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/>
+    </symbol>
+    <symbol id="i-osso" viewBox="0 0 24 24">
+      <path pathLength="1" d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/>
+    </symbol>
+    <symbol id="i-gotas" viewBox="0 0 24 24">
+      <path pathLength="1" d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/>
+      <path pathLength="1" d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/>
+    </symbol>
+    <symbol id="i-tesoura" viewBox="0 0 24 24">
+      <circle pathLength="1" cx="6" cy="6" r="3"/><circle pathLength="1" cx="6" cy="18" r="3"/>
+      <path pathLength="1" d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/>
+    </symbol>
+    <symbol id="i-estetoscopio" viewBox="0 0 24 24">
+      <path pathLength="1" d="M11 2v2M5 2v2"/>
+      <path pathLength="1" d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/>
+      <path pathLength="1" d="M8 15a6 6 0 0 0 12 0v-3"/>
+      <circle pathLength="1" cx="20" cy="10" r="2"/>
+    </symbol>
+    <symbol id="i-coracao" viewBox="0 0 24 24">
+      <path pathLength="1" d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+    </symbol>
+    <symbol id="i-sacola" viewBox="0 0 24 24">
+      <path pathLength="1" d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+      <path pathLength="1" d="M3 6h18M16 10a4 4 0 0 1-8 0"/>
+    </symbol>
+    <symbol id="i-brilho" viewBox="0 0 24 24">
+      <path pathLength="1" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+      <path pathLength="1" d="M20 3v4M22 5h-4M4 17v2M5 18H3"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path pathLength="1" d="M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0"/>
+      <circle pathLength="1" cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24">
+      <circle pathLength="1" cx="12" cy="12" r="10"/><path pathLength="1" d="M12 6v6l4 2"/>
+    </symbol>
+    <symbol id="i-telefone" viewBox="0 0 24 24">
+      <path pathLength="1" d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+    </symbol>
+    <symbol id="i-seta" viewBox="0 0 24 24">
+      <path pathLength="1" d="M5 12h14M12 5l7 7-7 7"/>
+    </symbol>
+    <symbol id="i-esq" viewBox="0 0 24 24"><path pathLength="1" d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-dir" viewBox="0 0 24 24"><path pathLength="1" d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-cima" viewBox="0 0 24 24"><path pathLength="1" d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-setas-lados" viewBox="0 0 24 24"><path pathLength="1" d="m8 7-5 5 5 5M16 7l5 5-5 5"/></symbol>
+  </svg>
+
+  <!-- CABEÇALHO -->
+  <header class="topo">
+    <!-- LOGO: coloque o arquivo em img/logo.png (se não existir, aparece a patinha + texto) -->
+    <a href="#inicio" class="logo">
+      <img src="img/logo.png" alt="" onload="this.parentNode.classList.add('tem-logo')" onerror="this.remove()">
+      <span class="logo-pata"><svg class="icone"><use href="#i-pata"/></svg></span>
+      <strong>Pet Shop <b>Vira-Lata</b></strong>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#antes-depois">Antes &amp; Depois</a>
+      <a href="#contato">Contato</a>
+      <a href="tel:+5511XXXXXXXX" class="botao botao-pequeno">
+        <svg class="icone"><use href="#i-telefone"/></svg> Ligar
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+      <div class="container hero-grade">
+        <div class="hero-texto">
+          <p class="selo"><svg class="icone"><use href="#i-pata"/></svg> Cuidado de verdade pro seu pet</p>
+          <h1>
+            Seu pet mais
+            <span class="rotator" aria-label="cheiroso, estiloso, feliz, paparicado">
+              <span>cheiroso</span><span>estiloso</span><span>feliz</span><span>paparicado</span>
+            </span>
+          </h1>
+          <p class="lead">
+            Banho, tosa, ração, petiscos e muito carinho. Aqui o seu melhor amigo
+            é tratado como parte da família.
+          </p>
+          <div class="hero-botoes">
+            <a href="tel:+5511XXXXXXXX" class="botao">
+              <svg class="icone"><use href="#i-telefone"/></svg> Agendar horário
+            </a>
+            <a href="#servicos" class="botao botao-claro">
+              Ver serviços <svg class="icone"><use href="#i-seta"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- FOTO PRINCIPAL: img/hero.png (se não existir, aparece o mascote) -->
+          <div class="blob">
+            <svg class="mascote" viewBox="0 0 200 200" aria-hidden="true">
+              <ellipse class="orelha orelha-e" cx="46" cy="88" rx="22" ry="42" fill="#b8702d" transform="rotate(18 46 88)"/>
+              <ellipse class="orelha orelha-d" cx="154" cy="88" rx="22" ry="42" fill="#b8702d" transform="rotate(-18 154 88)"/>
+              <circle cx="100" cy="100" r="60" fill="#eaa85e"/>
+              <ellipse cx="124" cy="86" rx="20" ry="22" fill="#c98640"/>
+              <ellipse cx="100" cy="126" rx="33" ry="25" fill="#fff4e0"/>
+              <path class="lingua" d="M91 134q9 24 18 0z" fill="#ff7a8a"/>
+              <path d="M100 121v11M100 132c-6 8-17 6-19 0M100 132c6 8 17 6 19 0" fill="none" stroke="#3b2a1d" stroke-width="3" stroke-linecap="round"/>
+              <ellipse cx="100" cy="113" rx="12" ry="8.5" fill="#2c211a"/>
+              <ellipse cx="96" cy="110.500" rx="3.500" ry="2" fill="#fff" opacity=".55"/>
+              <g class="olhos">
+                <circle cx="77" cy="92" r="7.500" fill="#2c211a"/><circle cx="123" cy="92" r="7.500" fill="#2c211a"/>
+                <circle cx="74.500" cy="89.500" r="2.500" fill="#fff"/><circle cx="120.500" cy="89.500" r="2.500" fill="#fff"/>
+              </g>
+              <circle cx="62" cy="112" r="8" fill="#ff8f8f" opacity=".35"/><circle cx="138" cy="112" r="8" fill="#ff8f8f" opacity=".35"/>
+            </svg>
+            <img class="blob-foto" src="img/hero.png" alt="" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA ROLANDO -->
+    <div class="faixa-wrap" aria-hidden="true">
+      <div class="faixa">
+        <div class="faixa-grupo">
+          <span>Banho</span><svg class="icone"><use href="#i-pata"/></svg>
+          <span>Tosa</span><svg class="icone"><use href="#i-osso"/></svg>
+          <span>Ração</span><svg class="icone"><use href="#i-pata"/></svg>
+          <span>Petiscos</span><svg class="icone"><use href="#i-coracao"/></svg>
+          <span>Acessórios</span><svg class="icone"><use href="#i-pata"/></svg>
+          <span>Carinho</span><svg class="icone"><use href="#i-osso"/></svg>
+        </div>
+        <div class="faixa-grupo">
+          <span>Banho</span><svg class="icone"><use href="#i-pata"/></svg>
+          <span>Tosa</span><svg class="icone"><use href="#i-osso"/></svg>
+          <span>Ração</span><svg class="icone"><use href="#i-pata"/></svg>
+          <span>Petiscos</span><svg class="icone"><use href="#i-coracao"/></svg>
+          <span>Acessórios</span><svg class="icone"><use href="#i-pata"/></svg>
+          <span>Carinho</span><svg class="icone"><use href="#i-osso"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVIÇOS
+         CONFIRMAR COM O DONO: quais serviços existem de verdade. -->
+    <section class="secao" id="servicos">
+      <div class="container">
+        <p class="rotulo">O que a gente faz</p>
+        <h2>Serviços</h2>
+
+        <div class="grade-cards">
+          <article class="card revelar cor-1">
+            <span class="servico-icone"><svg class="icone"><use href="#i-gotas"/></svg></span>
+            <h3>Banho</h3>
+            <p>Banho cheiroso, com produtos adequados pro pelo e pra pele do seu pet.</p>
+            <a class="card-link" href="#contato">Agendar <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card revelar cor-2">
+            <span class="servico-icone"><svg class="icone"><use href="#i-tesoura"/></svg></span>
+            <h3>Tosa</h3>
+            <p>Tosa higiênica, na máquina ou na tesoura, do jeitinho que você pedir.</p>
+            <a class="card-link" href="#contato">Agendar <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card revelar cor-3">
+            <span class="servico-icone"><svg class="icone"><use href="#i-estetoscopio"/></svg></span>
+            <h3>Saúde</h3>
+            <p>Cuidado com a saúde e o bem-estar do seu pet, com atenção a cada detalhe.</p>
+            <a class="card-link" href="#contato">Saber mais <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card revelar cor-2">
+            <span class="servico-icone"><svg class="icone"><use href="#i-osso"/></svg></span>
+            <h3>Ração e petiscos</h3>
+            <p>Rações, petiscos e ossinhos pra todos os tamanhos e gostos.</p>
+            <a class="card-link" href="#contato">Consultar <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card revelar cor-3">
+            <span class="servico-icone"><svg class="icone"><use href="#i-sacola"/></svg></span>
+            <h3>Acessórios</h3>
+            <p>Coleiras, camas, brinquedos e tudo pra deixar seu pet bem equipado.</p>
+            <a class="card-link" href="#contato">Consultar <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+          <article class="card revelar cor-1">
+            <span class="servico-icone"><svg class="icone"><use href="#i-coracao"/></svg></span>
+            <h3>Carinho de sobra</h3>
+            <p>Atendimento com paciência e amor, porque pet feliz é o nosso foco.</p>
+            <a class="card-link" href="#contato">Vem conhecer <svg class="icone"><use href="#i-seta"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao secao-menta" id="sobre">
+      <div class="container sobre">
+        <!-- FOTOS: img/sobre-1.jpg e img/sobre-2.jpg -->
+        <div class="sobre-fotos" aria-hidden="true">
+          <div class="polaroid p1" style="--img: url('img/sobre-1.jpg')"></div>
+          <div class="polaroid p2" style="--img: url('img/sobre-2.jpg')"></div>
+        </div>
+
+        <div class="sobre-texto">
+          <p class="rotulo">Quem somos</p>
+          <h2>Seu pet em boas patas</h2>
+          <p>
+            O Pet Shop Vira-Lata existe pra cuidar de quem cuida de você. Cada cliente de
+            quatro patas é recebido com atenção, paciência e muito carinho.
+          </p>
+          <p>
+            Do banho à tosa, da ração ao brinquedo novo, a ideia é simples: seu pet
+            sai feliz e você volta tranquilo.
+          </p>
+
+          <ul class="chips">
+            <li class="chip revelar"><span class="chip-icone"><svg class="icone"><use href="#i-coracao"/></svg></span> Carinho de verdade</li>
+            <li class="chip revelar"><span class="chip-icone"><svg class="icone"><use href="#i-pata"/></svg></span> Pet em primeiro lugar</li>
+            <li class="chip revelar"><span class="chip-icone"><svg class="icone"><use href="#i-brilho"/></svg></span> Sai cheirosinho</li>
+          </ul>
+        </div>
+
+        <!-- MINIMAPA: se quiser o ponto exato, abra a loja no Google Maps > Compartilhar > Incorporar um mapa
+             e cole o endereço que aparecer em src="" aqui embaixo. -->
+        <div class="mapa">
+          <iframe
+            title="Mapa com a localização do Pet Shop Vira-Lata"
+            src="https://www.google.com/maps?q=Pet+Shop+Vira-Lata,+Santo+Andr%C3%A9,+SP&output=embed&hl=pt-BR"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA (CARROSSEL)
+         Fotos: img/pet-1.jpg até img/pet-6.jpg -->
+    <section class="secao" id="galeria">
+      <div class="container">
+        <p class="rotulo">Nossos clientes de patinhas</p>
+        <h2>Galeria</h2>
+
+        <div class="carrossel" id="carrossel" role="region" aria-roledescription="carrossel" aria-label="Fotos dos pets">
+          <div class="car-janela">
+            <div class="car-trilho">
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/pet-1.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/pet-2.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/pet-3.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/pet-4.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/pet-5.jpg')"></div></figure>
+              <figure class="slide"><div class="slide-foto" style="--img: url('img/pet-6.jpg')"></div></figure>
+            </div>
+          </div>
+
+          <button class="car-btn car-prev" type="button" aria-label="Foto anterior"><svg class="icone"><use href="#i-esq"/></svg></button>
+          <button class="car-btn car-next" type="button" aria-label="Próxima foto"><svg class="icone"><use href="#i-dir"/></svg></button>
+
+          <div class="car-rodape">
+            <div class="car-pontos" role="tablist" aria-label="Escolher foto"></div>
+            <div class="car-progresso" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANTES & DEPOIS
+         Fotos: img/antes.jpg e img/depois.jpg (mesmo pet, mesmo enquadramento) -->
+    <section class="secao secao-sol" id="antes-depois">
+      <div class="container">
+        <p class="rotulo">Olha a transformação</p>
+        <h2>Antes &amp; depois</h2>
+        <p class="sub">Arraste pro lado e veja a diferença que um bom banho e uma tosa fazem.</p>
+
+        <div class="comparador" id="comparador">
+          <div class="comp-lado comp-depois" style="--img: url('img/depois.jpg')"><span class="comp-tag">Depois</span></div>
+          <div class="comp-lado comp-antes" style="--img: url('img/antes.jpg')"><span class="comp-tag">Antes</span></div>
+          <div class="comp-linha" aria-hidden="true"><span class="comp-bola"><svg class="icone"><use href="#i-setas-lados"/></svg></span></div>
+          <input class="comp-range" type="range" min="0" max="100" value="50" aria-label="Arraste para comparar antes e depois">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO
+         PREENCHER: telefone, endereço e horários reais (procure por XXXX e "a confirmar"). -->
+    <section class="secao secao-teal" id="contato">
+      <div class="container contato">
+        <div class="contato-esq">
+          <p class="rotulo">Vem pra cá</p>
+          <h2>Agende o horário do seu pet</h2>
+          <p>Ligue ou passe aqui. A gente vai adorar conhecer seu melhor amigo.</p>
+          <div class="hero-botoes">
+            <a href="tel:+5511XXXXXXXX" class="botao botao-sol">
+              <svg class="icone"><use href="#i-telefone"/></svg> (11) XXXX-XXXX
+            </a>
+            <a href="https://maps.app.goo.gl/pp8HFh3oTh83RMmw8" class="botao botao-contorno" target="_blank" rel="noopener">
+              <svg class="icone"><use href="#i-pin"/></svg> Ver no mapa
+            </a>
+          </div>
+        </div>
+
+        <div class="contato-card revelar">
+          <h3><svg class="icone"><use href="#i-pin"/></svg> Endereço</h3>
+          <p>Endereço a confirmar<br>Santo André, SP</p>
+
+          <h3><svg class="icone"><use href="#i-relogio"/></svg> Horários</h3>
+          <ul class="horarios">
+            <li><span>Segunda a Sexta</span><span>a confirmar</span></li>
+            <li><span>Sábado</span><span>a confirmar</span></li>
+            <li><span>Domingo</span><span>a confirmar</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>&copy; 2026 Pet Shop Vira-Lata &middot; Santo André, SP</p>
+  </footer>
+
+  <!-- BOTÕES FLUTUANTES -->
+  <a href="tel:+5511XXXXXXXX" class="flutuante flutuante-ligar" aria-label="Ligar agora"><svg class="icone"><use href="#i-telefone"/></svg></a>
+  <button type="button" class="flutuante flutuante-topo" aria-label="Voltar ao topo"><svg class="icone"><use href="#i-osso"/></svg></button>
+
+  <script>
+    (function () {
+      var reduzir = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ============ 1) TUDO APARECE AO ROLAR ============ */
+      var grupos = [
+        '.secao .rotulo', '.secao h2', '.secao .sub',
+        '.card', '.sobre-fotos', '.sobre-texto > *', '.chip',
+        '.carrossel', '.comparador', '.contato-esq > *', '.contato-card'
+      ];
+      var itens = [], vistos = new Set(), contagem = new Map(), cards = 0;
+
+      grupos.forEach(function (sel) {
+        document.querySelectorAll(sel).forEach(function (el) {
+          if (vistos.has(el)) return;
+          vistos.add(el);
+          var d;
+          if (el.classList.contains('card')) {
+            d = cards++ % 3;                        // escalona por linha
+          } else {
+            d = contagem.get(el.parentNode) || 0;   // escalona entre irmãos
+            contagem.set(el.parentNode, d + 1);
+          }
+          el.classList.add('anim');
+          el.style.setProperty('--d', d);
+          itens.push(el);
+        });
+      });
+
+      function mostrar(el) {
+        el.classList.add('visivel');
+        setTimeout(function () { el.classList.add('pronto'); }, 1500);
+      }
+
+      if (!('IntersectionObserver' in window)) {
+        itens.forEach(mostrar);
+      } else {
+        var io = new IntersectionObserver(function (entradas) {
+          entradas.forEach(function (e) {
+            if (e.isIntersecting) { mostrar(e.target); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.15 });
+        itens.forEach(function (el) { io.observe(el); });
+      }
+
+      /* ============ 2) CARROSSEL ============ */
+      (function () {
+        var raiz = document.getElementById('carrossel');
+        if (!raiz) return;
+        var janela = raiz.querySelector('.car-janela');
+        var trilho = raiz.querySelector('.car-trilho');
+        var slides = raiz.querySelectorAll('.slide');
+        var pontosBox = raiz.querySelector('.car-pontos');
+        var barra = raiz.querySelector('.car-progresso span');
+        var TEMPO = 4500;                 // tempo entre fotos (ms)
+        var indice = 0, porVez = 3, timer = null, pausado = false;
+
+        function calcPorVez() {
+          var l = window.innerWidth;
+          return l < 640 ? 1 : (l < 980 ? 2 : 3);
+        }
+        function maximo() { return Math.max(0, slides.length - porVez); }
+
+        function montarPontos() {
+          pontosBox.innerHTML = '';
+          for (var i = 0; i <= maximo(); i++) {
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.setAttribute('aria-label', 'Ir para a foto ' + (i + 1));
+            (function (n) { b.addEventListener('click', function () { ir(n, true); }); })(i);
+            pontosBox.appendChild(b);
+          }
+        }
+
+        function atualizar() {
+          trilho.style.transform = 'translateX(' + (-indice * (100 / porVez)) + '%)';
+          var pts = pontosBox.children;
+          for (var i = 0; i < pts.length; i++) pts[i].classList.toggle('ativo', i === indice);
+          slides.forEach(function (s, i) {
+            s.classList.toggle('em-vista', i >= indice && i < indice + porVez);
+          });
+          reiniciarBarra();
+        }
+
+        function reiniciarBarra() {
+          if (!barra) return;
+          barra.style.animation = 'none';
+          void barra.offsetWidth;          // força o reinício
+          if (!reduzir && !pausado) barra.style.animation = 'progresso ' + TEMPO + 'ms linear forwards';
+        }
+
+        function ir(n, manual) {
+          var max = maximo();
+          indice = n > max ? 0 : (n < 0 ? max : n);
+          atualizar();
+          if (manual) agendar();
+        }
+
+        function agendar() {
+          clearTimeout(timer);
+          if (reduzir || pausado) return;
+          timer = setTimeout(function () { ir(indice + 1, false); agendar(); }, TEMPO);
+        }
+
+        raiz.querySelector('.car-prev').addEventListener('click', function () { ir(indice - 1, true); });
+        raiz.querySelector('.car-next').addEventListener('click', function () { ir(indice + 1, true); });
+
+        // pausa quando o mouse está em cima
+        raiz.addEventListener('mouseenter', function () { pausado = true; clearTimeout(timer); reiniciarBarra(); });
+        raiz.addEventListener('mouseleave', function () { pausado = false; atualizar(); agendar(); });
+
+        // arrastar com o dedo / mouse
+        var x0 = null;
+        janela.addEventListener('pointerdown', function (e) { x0 = e.clientX; });
+        janela.addEventListener('pointerup', function (e) {
+          if (x0 === null) return;
+          var dx = e.clientX - x0; x0 = null;
+          if (Math.abs(dx) > 45) ir(indice + (dx < 0 ? 1 : -1), true);
+        });
+        janela.addEventListener('pointercancel', function () { x0 = null; });
+
+        // setas do teclado
+        raiz.setAttribute('tabindex', '0');
+        raiz.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowLeft') ir(indice - 1, true);
+          if (e.key === 'ArrowRight') ir(indice + 1, true);
+        });
+
+        window.addEventListener('resize', function () {
+          var novo = calcPorVez();
+          if (novo !== porVez) { porVez = novo; indice = Math.min(indice, maximo()); montarPontos(); atualizar(); }
+        });
+
+        porVez = calcPorVez();
+        raiz.style.setProperty('--por-vez', porVez);
+        montarPontos();
+        atualizar();
+        agendar();
+      })();
+
+      /* ============ 3) ANTES & DEPOIS ============ */
+      (function () {
+        var comp = document.getElementById('comparador');
+        if (!comp) return;
+        var range = comp.querySelector('.comp-range');
+
+        function pos(v) { comp.style.setProperty('--pos', v + '%'); }
+        range.addEventListener('input', function () { pos(range.value); });
+        pos(range.value);
+
+        // quando aparece na tela, faz uma "demonstração" balançando o divisor
+        if (reduzir || !('IntersectionObserver' in window)) return;
+        var visto = false;
+        new IntersectionObserver(function (es, obs) {
+          if (!es[0].isIntersecting || visto) return;
+          visto = true; obs.disconnect();
+          var ini = null, dur = 1600;
+          function passo(t) {
+            if (ini === null) ini = t;
+            var p = Math.min((t - ini) / dur, 1);
+            var v = 50 + Math.sin(p * Math.PI * 2) * 22 * (1 - p);
+            range.value = v; pos(v);
+            if (p < 1) requestAnimationFrame(passo);
+            else { range.value = 50; pos(50); }
+          }
+          setTimeout(function () { requestAnimationFrame(passo); }, 700);
+        }, { threshold: 0.5 }).observe(comp);
+      })();
+      /* ============ 5) BOTÃO VOLTAR AO TOPO ============ */
+      (function () {
+        var btn = document.querySelector('.flutuante-topo');
+        if (!btn) return;
+        window.addEventListener('scroll', function () {
+          btn.classList.toggle('mostrar', window.scrollY > 700);
+        }, { passive: true });
+        btn.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: reduzir ? 'auto' : 'smooth' });
+        });
+      })();
+    })();
+  </script>
+
+</body>
+</html>
